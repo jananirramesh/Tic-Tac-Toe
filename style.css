@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f9d1e4;
+  }
+  
+  #game {
+    margin-top: 50px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #ff66b2;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  #board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 20px auto;
+    width: 310px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #ff66b2;
+    font-size: 2em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s;
+  }
+  
+  .cell:hover {
+    background-color: #ffb3cc;
+    transform: scale(1.1);
+  }
+  
+  button {
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ff3385;
+  }
+  
+  #status {
+    margin: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff66b2;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .win-caption {
+    font-size: 1.5em;
+    color: #ff66b2;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .reset-message {
+    font-size: 1.2em;
+    color: #ff3385;
+    font-style: italic;
+  }
+  
